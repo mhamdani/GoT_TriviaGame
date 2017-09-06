@@ -8,7 +8,7 @@ $(document).ready(function() {
   var timeIsUp;
 
   var audioElement = document.createElement("audio");
-  audioElement.setAttribute("src", "Assets/got.mp3");
+  audioElement.setAttribute("src", "assets/got.mp3");
 
   $(".theme-button").on("click", function() {
     audioElement.play();

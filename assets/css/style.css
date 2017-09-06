@@ -17,6 +17,10 @@ body {
 #time {
   font-size: 20px;
 }
+.theme-button,
+.pause-button {
+  background-color: whitesmoke;
+}
 .button {
   width: 250px;
   border-radius: 0;

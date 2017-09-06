@@ -1,17 +1,28 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-var qArray;
-var right;
-var wrong;
-var unanswered;
-var currentIndex;
-var timeIsUp;
+  var qArray;
+  var right;
+  var wrong;
+  var unanswered;
+  var currentIndex;
+  var timeIsUp;
 
-var questionTimer = {
-  time: 30,
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", "Assets/got.mp3");
 
-reset: function() {
-    questionTimer.time = 30;
+  $(".theme-button").on("click", function() {
+    audioElement.play();
+  });
+
+  $(".pause-button").on("click", function() {
+    audioElement.pause();
+  });
+
+  var questionTimer = {
+    time: 30,
+
+  reset: function() {
+        questionTimer.time = 30;
   },
   start: function() {
     $("#time").html("Time Remaining: " + questionTimer.time).css("color", "#BCFEFF");;
@@ -22,7 +33,7 @@ reset: function() {
   },
   count: function() {
         questionTimer.time--;
-        $("time").html("Time Remaining: " + questionTimer.time);
+        $("#time").html("Time Remaining: " + questionTimer.time);
 
       // Timer will flash white/yellow/pink when close to time-up
       if(questionTimer.time < 6) {

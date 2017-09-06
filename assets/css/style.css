@@ -1,0 +1,41 @@
+h1,
+.button,
+* {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+h1 {
+color: dimgrey;
+padding: 10px;
+}
+
+body {
+  background-image: url(https://pogd.es/assets/bg/Game-of-Thrones.jpg)
+}
+
+#time {
+  font-size: 20px;
+}
+.button {
+  width: 250px;
+  border-radius: 0;
+  background-color: black;
+  opacity: 0.6;
+  margin: 10px;
+  color: slateblue;
+  font-size: 25px;
+}
+.button:hover{
+  background-color: #BCFEFF;
+}
+#questions {
+  font-size: 23px;
+}
+.gifs {
+  max-width: 450px;
+  max-height: 450px;
+}
+#gif-holder {
+  margin-top: -50px;
+}
